@@ -15,32 +15,41 @@ public class Main {
         int n = new Scanner(System.in).nextInt();
         ArrayList arrayList = null;
         while (true) {
-            System.out.print(Color.CYAN_BOLD + "Enter their type (int,double)" + Color.RESET + "\n");
-            String type = new Scanner(System.in).nextLine();
-            switch (type) {
-                case ("int") -> {
-                    arrayList = new ArrayList<Integer>();
-                    for (int i = 0; i < n; i++) {
-                        System.out.print(Color.CYAN_BOLD + "Enter number : " + Color.RESET + "\n");
-                        arrayList.add(new Scanner(System.in).nextInt());
+            System.out.print(Color.CYAN_BOLD + "Enter operation (sub for Subtraction, sum for Summation) : ");
+            String operation = new Scanner(System.in).nextLine();
+            switch (operation) {
+                case ("sum") -> {
+                    while (true) {
+                        System.out.print(Color.CYAN_BOLD + "Enter their type (int,double)" + Color.RESET + "\n");
+                        String type = new Scanner(System.in).nextLine();
+                        switch (type) {
+                            case ("int") -> {
+                                arrayList = new ArrayList<Integer>();
+                                for (int i = 0; i < n; i++) {
+                                    System.out.print(Color.CYAN_BOLD + "Enter number : " + Color.RESET + "\n");
+                                    arrayList.add(new Scanner(System.in).nextInt());
+                                }
+                                Preform<Integer> integerPreform = new Helper<Integer>(Integer.class)::summer;
+                                System.out.println(integerPreform.preform(arrayList));
+                            }
+                            case ("double") -> {
+                                arrayList = new ArrayList<Double>();
+                                for (int i = 0; i < n; i++) {
+                                    System.out.print(Color.CYAN_BOLD + "Enter number : " + Color.RESET + "\n");
+                                    arrayList.add(new Scanner(System.in).nextDouble());
+                                }
+                                Preform<Double> doublePreform = new Helper<Double>(Double.class)::summer;
+                                System.out.println(doublePreform.preform(arrayList));
+                            }
+                            default -> System.err.println("invalid!!!!");
+                        }
+                        if (type.equals("int") || type.equals("double")) break;
                     }
-                    Preform<Integer> integerPreform = new Helper<Integer>(Integer.class)::helper;
-                    System.out.println(integerPreform.preform(arrayList));
                 }
-                case ("double") -> {
-                    arrayList = new ArrayList<Double>();
-                    for (int i = 0; i < n; i++) {
-                        System.out.print(Color.CYAN_BOLD + "Enter number : " + Color.RESET + "\n");
-                        arrayList.add(new Scanner(System.in).nextDouble());
-                    }
-                    Preform<Double> doublePreform = new Helper<Double>(Double.class)::helper;
-                    System.out.println(doublePreform.preform(arrayList));
-                }
-                default -> System.err.println("fuck you!!!!");
+                default -> System.err.println("invalid");
             }
-            if (type.equals("int") || type.equals("double")) break;
+            if (operation.equals("sum") || operation.equals("sub")) break;
         }
-
     }
 }
 
@@ -55,7 +64,7 @@ class Helper<T> {
         return this.type;
     }
 
-    public T helper(ArrayList<T> toPreform) {
+    public T summer(ArrayList<T> toPreform) {
         AtomicReference returner = null;
         if (getType() == Integer.class) {
             AtomicInteger summ = new AtomicInteger();
