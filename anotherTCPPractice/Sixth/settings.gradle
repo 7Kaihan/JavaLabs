@@ -1,0 +1,5 @@
+rootProject.name = 'Sixth'
+include 'common'
+include 'client'
+include 'practical'
+
