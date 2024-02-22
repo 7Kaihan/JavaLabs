@@ -1,0 +1,38 @@
+<persons>
+  <person>
+    <id>1</id>
+    <name>asdf</name>
+    <coordinates>
+      <x>32</x>
+      <y>23</y>
+    </coordinates>
+    <creationDate>2024-02-22T21:38:43.8988818+03:00[Europe/Moscow]</creationDate>
+    <height>180</height>
+    <birthday>3901-01-06 21:00:00.0 UTC</birthday>
+    <weight>80.0</weight>
+    <hairColor>BLUE</hairColor>
+    <location>
+      <x>23</x>
+      <y>43.0</y>
+      <z>3</z>
+    </location>
+  </person>
+  <person>
+    <id>2</id>
+    <name>sadf</name>
+    <coordinates>
+      <x>23</x>
+      <y>34</y>
+    </coordinates>
+    <creationDate>2024-02-22T21:39:08.0555463+03:00[Europe/Moscow]</creationDate>
+    <height>190</height>
+    <birthday>3902-01-07 21:00:00.0 UTC</birthday>
+    <weight>90.0</weight>
+    <hairColor>RED</hairColor>
+    <location>
+      <x>32</x>
+      <y>3.0</y>
+      <z>4</z>
+    </location>
+  </person>
+</persons>
