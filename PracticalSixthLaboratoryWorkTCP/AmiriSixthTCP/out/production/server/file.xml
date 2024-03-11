@@ -1,0 +1,20 @@
+<set>
+  <person>
+    <id>1</id>
+    <name>Kristina</name>
+    <coordinates>
+      <x>23</x>
+      <y>43</y>
+    </coordinates>
+    <creationDate>2024-03-11T21:38:51.1763812+03:00[Europe/Moscow]</creationDate>
+    <height>168</height>
+    <birthday>2005-12-26 21:00:00.0 UTC</birthday>
+    <weight>55.0</weight>
+    <hairColor>BLUE</hairColor>
+    <location>
+      <x>23</x>
+      <y>43.0</y>
+      <z>3</z>
+    </location>
+  </person>
+</set>

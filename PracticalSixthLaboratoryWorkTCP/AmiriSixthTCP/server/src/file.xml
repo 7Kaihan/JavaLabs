@@ -1,0 +1,74 @@
+<set>
+  <person>
+    <id>4</id>
+    <name>Veronika</name>
+    <coordinates>
+      <x>349</x>
+      <y>234</y>
+    </coordinates>
+    <creationDate>2024-03-11T21:47:07.4026766+03:00[Europe/Moscow]</creationDate>
+    <height>165</height>
+    <birthday>2009-12-11 21:00:00.0 UTC</birthday>
+    <weight>50.0</weight>
+    <hairColor>BROWN</hairColor>
+    <location>
+      <x>234</x>
+      <y>198.0</y>
+      <z>344</z>
+    </location>
+  </person>
+  <person>
+    <id>2</id>
+    <name>Anna</name>
+    <coordinates>
+      <x>21</x>
+      <y>43</y>
+    </coordinates>
+    <creationDate>2024-03-11T21:42:49.7847343+03:00[Europe/Moscow]</creationDate>
+    <height>175</height>
+    <birthday>2003-12-19 21:00:00.0 UTC</birthday>
+    <weight>60.0</weight>
+    <hairColor>BROWN</hairColor>
+    <location>
+      <x>234</x>
+      <y>212.0</y>
+      <z>53</z>
+    </location>
+  </person>
+  <person>
+    <id>3</id>
+    <name>Yana</name>
+    <coordinates>
+      <x>342</x>
+      <y>453</y>
+    </coordinates>
+    <creationDate>2024-03-11T21:46:11.499608+03:00[Europe/Moscow]</creationDate>
+    <height>175</height>
+    <birthday>2007-12-08 21:00:00.0 UTC</birthday>
+    <weight>175.0</weight>
+    <hairColor>RED</hairColor>
+    <location>
+      <x>235</x>
+      <y>232.0</y>
+      <z>124</z>
+    </location>
+  </person>
+  <person>
+    <id>1</id>
+    <name>Kristina</name>
+    <coordinates>
+      <x>23</x>
+      <y>43</y>
+    </coordinates>
+    <creationDate>2024-03-11T21:38:51.1763812+03:00[Europe/Moscow]</creationDate>
+    <height>168</height>
+    <birthday>2005-12-26 21:00:00.0 UTC</birthday>
+    <weight>55.0</weight>
+    <hairColor>BLUE</hairColor>
+    <location>
+      <x>23</x>
+      <y>43.0</y>
+      <z>3</z>
+    </location>
+  </person>
+</set>
